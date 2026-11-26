@@ -13,23 +13,23 @@
   <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
   <style>
     :root {
-      --primary-color: #FAD4C0;
-      --surface-color: #FFF5E6;
+      --primary-color: #C7D957;
+      --surface-color: #F7F0DC;
     }
     body { font-family: 'Inter', sans-serif; background-color: var(--surface-color); color: #111827; }
     .draggable-tabs { cursor: grab; user-select: none; }
     .draggable-tabs:active { cursor: grabbing; }
     .bento-card { background: white; border: 1px solid #E5E7EB; border-radius: 1rem; transition: all 0.2s ease; }
-    .bento-card:hover { border-color: #FAD4C0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05); }
+    .bento-card:hover { border-color: #14532D; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05); }
     .modal-content-wrapper { max-height: 85vh; overflow-y: auto; scrollbar-width: thin; }
 
     /* Login & Loading Enhancements */
     .login-mesh-bg {
       background-color: var(--surface-color);
       background-image: 
-        radial-gradient(at 0% 0%, hsla(20,100%,90%,1) 0, transparent 50%), 
-        radial-gradient(at 50% 0%, hsla(40,100%,90%,1) 0, transparent 50%), 
-        radial-gradient(at 100% 0%, hsla(20,100%,85%,1) 0, transparent 50%);
+        radial-gradient(at 0% 0%, hsla(140,55%,88%,1) 0, transparent 50%), 
+        radial-gradient(at 50% 0%, hsla(75,65%,85%,1) 0, transparent 50%), 
+        radial-gradient(at 100% 0%, hsla(160,45%,82%,1) 0, transparent 50%);
     }
     .login-glass {
       background: rgba(255, 255, 255, 0.7);
@@ -1522,6 +1522,7 @@
             <div>
               <label class="text-[10px] uppercase font-bold text-gray-400 tracking-widest block mb-1">App Theme</label>
               <select id="set-theme_id" class="w-full p-3 bg-surface rounded-xl border border-transparent focus:border-primary outline-none transition-all font-bold">
+                <option value="khatulistiwa-green">Khatulistiwa Green</option>
                 <option value="bento-warm">Warm Peach</option>
                 <option value="bento-mint">Fresh Mint</option>
                 <option value="bento-modern">Cyber Slate</option>
@@ -5769,6 +5770,7 @@
 
     var THEMES = {
       'bento-warm':     { primary: '#FAD4C0', surface: '#FFF5E6' },
+      'khatulistiwa-green': { primary: '#C7D957', surface: '#F7F0DC' },
       'bento-mint':     { primary: '#A7F3D0', surface: '#F0FDF4' },
       'bento-modern':   { primary: '#DDD6FE', surface: '#F5F3FF' },
       'bento-lavender': { primary: '#E9D5FF', surface: '#FAF5FF' },
